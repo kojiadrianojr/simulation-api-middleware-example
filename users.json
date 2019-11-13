@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "jino.lacson@boom.camp",
+      "password": "lacson",
+      "firstname" : "",
+      "lastname" : "",
+      "status" : "1"
+    },
+     {
+      "id": 2,
+      "username": "aodhan.hayter@boom.camp",
+      "password": "hayter",
+      "firstname" : "",
+      "lastname" : "",
+      "status" : "1"
+    },
+     {
+      "id": 3,
+      "username": "greg.doerman@boom.camp",
+      "password": "doerman",
+      "firstname" : "",
+      "lastname" : "",
+      "status" : "1"
+    },
+     {
+      "id": 4,
+      "username": "trace.lumbao@boom.camp",
+      "password": "lumbao",
+      "firstname" : "",
+      "lastname" : "",
+      "status" : "1"
+    },
+     {
+      "id": 5,
+      "username": "oscar.escobar@boom.camp",
+      "password": "escobar",
+      "firstname" : "",
+      "lastname" : "",
+      "status" : "1"
+    }
+  ]
+}
