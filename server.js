@@ -76,7 +76,12 @@ server.post('/auth/listings', isUserAuthenticated ,(req, res, next) => {
 })
 
 
-//TODO: update user by id :)
+//TODO: search by username 
+// server.put('/auth/search/:username', isUserAuthenticated ,(req, res, next) => { });
+//
+
+
+//TODO: update user by
 // server.post('/auth/update/:id', isUserAuthenticated ,(req, res, next) => { });
 //
 

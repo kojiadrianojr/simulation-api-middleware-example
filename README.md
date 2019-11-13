@@ -90,7 +90,11 @@ npm run start-auth
 
 ```
 
+**User Search**
+```
+//TODO: http://localhost:8000/auth/search/:username
+```
+
 **User update**
 ```
-//TODO:
-```
+//TODO: http://localhost:8000/auth/update/:id
