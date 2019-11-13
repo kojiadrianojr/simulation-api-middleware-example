@@ -97,4 +97,5 @@ npm run start-auth
 
 **User update**
 ```
+//TODO: http://localhost:8000/auth/detail/:id
 //TODO: http://localhost:8000/auth/update/:id
