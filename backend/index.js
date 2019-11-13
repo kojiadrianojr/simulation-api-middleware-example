@@ -16,7 +16,6 @@ server.use(jsonServer.defaults()); //load default jsonServer
 
 server.post('/login', controller.login)
 
-
 server.use(middleWare) 
 server.use(router)
 

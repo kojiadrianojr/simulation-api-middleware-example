@@ -1,17 +1,17 @@
 const verify = require('./auth')
 
 function middleWare(req,res,next){
-    if (!req.headers.authorization){
+    if (!req.headers.auth){
         const status = 401
-        const message = 'Access Denied'
+        const message = '[!]Access Denied'
         res.status(status).json({status,message})
         return
     }
     try {
-        let verifyTokenResult = verify.verifyToken(req.headers.authorization.split(' ')[1])
+        let verifyTokenResult = verify.verifyToken(req.headers.auth)
         if (verifyTokenResult instanceof Error){
             const status = 401
-            const message = 'invalid access token'
+            const message = '[!]Invalid Access Token'
             res.status(status).json({status, message})
             return
         }
