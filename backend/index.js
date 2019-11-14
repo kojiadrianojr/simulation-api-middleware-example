@@ -7,7 +7,7 @@ const middleWare = require('./middleware')
 
 const PORT = 3001
 const server = jsonServer.create()
-const router = jsonServer.router('./backend/db.json')
+const router = jsonServer.router('./backend/data.json')
 
 
 //this is neaded to use post, patch etc etc

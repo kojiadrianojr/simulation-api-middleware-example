@@ -1,6 +1,6 @@
 const auth = require('../auth')
 
-function login(req,res){
+async function login(req,res){
     const { username, password } = req.body
     if (auth.isAuthenticated({username, password}) === false){
         const status = 401
@@ -8,8 +8,10 @@ function login(req,res){
         res.status(status).json({status,message})
         return
     }
-    const access_token = auth.createToken({username,password})
-    res.status(200).json({access_token})
+    let access_token = auth.createToken({username,password})
+    //secured_token = await auth.secure_token(access_token)
+    
+    res.status(200).json({username,access_token})
 }
 
 // function register(req,res){
