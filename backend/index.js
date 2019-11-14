@@ -17,7 +17,7 @@ server.use(jsonServer.defaults()); //load default jsonServer
 server.post('/login', controller.login)
 
 server.use(middleWare) 
-server.use(router)
+server.use('/api',router)
 
 server.listen(PORT, ()=>{
     console.log(`Now listening ( ͡°╭͜ʖ╮͡° )  @ ${PORT}`)
