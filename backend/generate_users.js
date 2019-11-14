@@ -9,7 +9,7 @@ function generateUsers(){
         let lastName = faker.name.lastName();
         let username = faker.internet.userName();
         let status = faker.random.boolean();
-        status = status === 1? 'active': 'inactive'
+        status = status === true? 'active': 'inactive'
         users.push({
             "id":id,
             "firstName": firstName,
